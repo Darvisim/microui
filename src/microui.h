@@ -8,7 +8,6 @@
 #ifndef MICROUI_H
 #define MICROUI_H
 
-#define MU_VERSION "2.02"
 
 #define MU_COMMANDLIST_SIZE     (256 * 1024)
 #define MU_ROOTLIST_SIZE        32
@@ -89,7 +88,9 @@ enum {
   MU_OPT_AUTOSIZE     = (1 << 9),
   MU_OPT_POPUP        = (1 << 10),
   MU_OPT_CLOSED       = (1 << 11),
-  MU_OPT_EXPANDED     = (1 << 12)
+  MU_OPT_EXPANDED     = (1 << 12),
+  MU_OPT_ALIGNTOP     = (1 << 13),
+  MU_OPT_ALIGNBOTTOM  = (1 << 14),
 };
 
 enum {
