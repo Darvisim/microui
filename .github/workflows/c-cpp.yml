@@ -13,10 +13,17 @@ jobs:
 
     steps:
     - uses: actions/checkout@v6
+
+    - name: install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y libsdl2-dev libglfw3-dev
     
     - name: build (SDL2)
-      run: bash ./demo/SDL2/build.sh
+      working-directory: ./demo/SDL2
+      run: bash build.sh
 
     - name: build (GLFW3)
-      run: bash ./demo/GLFW3/build.sh
+      working-directory: ./demo/GLFW3
+      run: bash build.sh
    
