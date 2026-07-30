@@ -13,6 +13,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v6
-    - name: build
-      run: bash ./demo/build.sh
+    
+    - name: build (SDL2)
+      run: bash ./demo/SDL2/build.sh
+
+    - name: build (GLFW3)
+      run: bash ./demo/GLFW3/build.sh
    
