@@ -14,7 +14,5 @@ jobs:
     steps:
     - uses: actions/checkout@v6
     - name: build
-      run: |
-        cd demo
-        bash build.sh
+      run: bash ./demo/build.sh
    
