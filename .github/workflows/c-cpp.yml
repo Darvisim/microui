@@ -12,7 +12,9 @@ jobs:
     runs-on: ubuntu-slim
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v6
     - name: build
-      run: ./demo/build.sh
+      run: |
+        cd demo
+        bash build.sh
    
